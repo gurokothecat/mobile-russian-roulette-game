@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roulette Russe mobile</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="txt_container">
+        <p id="message" class="message">Cliquez sur un bouton pour commencer le jeu.</p>
+    </div>
+    <div class="container">
+        <div>
+            <button class="fire-btn" onclick="playerFire()" type="button">Se viser</button>
+            <button class="pass-btn" onclick="passGun()" type="button">Viser le rival</button>
+        </div>
+        <div class="txtanim2">
+            <p>Score Joueur : <span id="playerScore">0</span></p>
+        </div>
+    </div>
+    <!-- Lien vers le fichier JS -->
+    <script src="roulette-russe.js"></script>
+    <div id="imageContainer"></div>
+<audio autoplay loop hidden>
+    <source src="HouseRisingSun.mp3" type="audio/mp3">
+    <source src="TheGoodBadUgly.mp3">
+</audio>
+
+    <label for="volumeControl" class="volume">Volume :</label>
+    <input type="range" id="volumeControl" min="0" max="1" step="0.01" value="1" oninput="changeVolume()"
+        class="volumec">
+
+
+</body>
+
+</html>

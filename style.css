@@ -1,0 +1,121 @@
+@media (max-width: 768px) {
+    /* Styles pour les petits écrans */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #393939;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ecf0f1;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.fire-btn {
+    position: absolute;
+    background-color: #ff0000;
+    color: white;
+    bottom: 5%;
+    left: 5%;
+    width: 40%;
+    height: 13%;
+}
+
+
+
+.pass-btn {
+    position: absolute;
+    color: white;
+    bottom: 5%;
+    right: 5%;
+    width: 40%;
+    height: 13%;
+    background-color: #120cc9;
+}
+
+
+
+.scoreboard {
+    margin-top: 20px;
+}
+
+.txtanim2 {
+    position: absolute;
+    left: 20%;
+    bottom: 17%;
+    font-size: 2rem;
+    text-align: center;
+    font-family: Impact, 'fantasy';
+    text-shadow: 0 0 10px red, 0 0 20px crimson, 0 0 30px darkred;
+    transition: all 0.5s ease-in-out;
+}
+
+.message {
+    z-index: 6;
+    color: white;
+    font-family: Courier New, monospace;
+    font-size: 1.3rem;
+}
+
+#imageContainer {
+    position: absolute;
+    margin-top: 43%;
+    margin-left: 28%;
+    width: 50%;
+    height: 50%;
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+}
+
+#imageContainer img {
+    max-width: 120%;
+    max-height: 120%;
+}
+
+.txt_container {
+    position: absolute;
+    display: inline-block;
+    border: 2px solid #333;
+    background-color: #121212;
+    font-size: 1.2em;
+    left: 5%;
+    color: #333;
+    border-radius: 5px;
+    height: 30%;
+    width: 90%;
+}
+
+.volume {
+    z-index: 6;
+    position: absolute;
+    left: 10%;
+    top: 30%;
+    font-family: serif;
+    font-size: 1.2em;
+}
+
+.volumec {
+    z-index: 6;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 30%;
+}
